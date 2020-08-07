@@ -12,9 +12,9 @@ describe('Android App sample', () => {
     
     await browser.pause(2000)
     
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 8; i++) {
       await browser.touchAction([
-       { action: 'press', x: 200, y: 1200 },
+       { action: 'press', x: 200, y: 900 },
        { action: 'moveTo', x: 200, y: 300},
         'release'
       ])
@@ -22,6 +22,13 @@ describe('Android App sample', () => {
 
     await browser.pause(2000)
     element = await browser.$('//android.widget.TextView[@content-desc="WebView"]')
+    await element.waitForExist({ timeout: 5000 })
+    await browser.waitUntil(
+      async () => await element.getText() == 'WebView', {
+        timeout: 5000,
+        timeoutMsg: 'expected text to be different after 5s'
+      }
+    )
     await element.click()
 	  await browser.pause(2000)
 	

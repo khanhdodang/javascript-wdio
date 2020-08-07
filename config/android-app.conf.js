@@ -13,7 +13,10 @@ config.capabilities = [{
   deviceGroup:        'KOBITON',
   deviceName:         '*',
   platformName:       'Android',
-  allowMobileShell: true
+  platformVersion:    '7.*',
+  allowMobileShell:   true,
+  noReset:            true,
+  fullReset:          false
 }]
 
 exports.config = config

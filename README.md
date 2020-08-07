@@ -34,6 +34,7 @@ Once you have everything set up, you can run the example test simply by running 
 
 ```
 npm run android-app-test
+npm run android-web-test
 npm run ios-app-test
 ```
 ## III. Report on the test results

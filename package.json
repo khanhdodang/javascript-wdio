@@ -4,6 +4,7 @@
   "description": "This is an example project using Javascript Webdriverio and Mocha framework",
   "scripts": {
     "android-app-test": "./node_modules/.bin/wdio ./config/android-app.conf.js",
+    "android-web-test": "./node_modules/.bin/wdio ./config/android-web.conf.js",
     "ios-app-test": "./node_modules/.bin/wdio ./config/ios-app.conf.js"
   },
   "keywords": [],

@@ -12,6 +12,7 @@ config.capabilities = [{
   browserName:        'chrome',
   deviceGroup:        'KOBITON',
   deviceName:         '*',
+  // platformVersion:    '8*',
   platformName:       'Android'
 }]
 

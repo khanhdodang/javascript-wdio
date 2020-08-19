@@ -33,9 +33,11 @@ export KOBITON_API_KEY=''
 Once you have everything set up, you can run the example test simply by running one of the following command:
 
 ```
+npm run android-shadow-dom-app-test
 npm run android-app-test
 npm run android-web-test
 npm run ios-app-test
+npm run ios-web-test
 ```
 ## III. Report on the test results
 
